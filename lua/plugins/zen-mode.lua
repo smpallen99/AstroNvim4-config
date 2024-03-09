@@ -1,5 +1,5 @@
 return {
-  "fole/zen-mode.nvim",
+  "folke/zen-mode.nvim",
   opts = function(_, opts)
     local to_merge = {
       plugins = {
