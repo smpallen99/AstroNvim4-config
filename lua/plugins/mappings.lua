@@ -15,9 +15,10 @@ return {
 
             ["<Leader>uZ"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
 
-            -- ["<Leader>N"] = vim.tbl_get(opts, "_map_sections", "N"),
+            -- Obsidian
             ["<Leader>N"] = { desc = "󰺿 Notes" },
             ["<Leader>Nl"] = { "<cmd>ls<cr>", desc = "ls" },
+            ["<Leader>Nw"] = { "<cmd>ObsidianWorkstace<cr>", desc = "Pick Obsidian Workspace" },
 
             -- second key is the lefthand side of the map
             -- mappings seen under group name "Buffer"
