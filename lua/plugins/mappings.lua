@@ -20,6 +20,12 @@ return {
             ["<Leader>Nl"] = { "<cmd>ls<cr>", desc = "ls" },
             ["<Leader>Nw"] = { "<cmd>ObsidianWorkstace<cr>", desc = "Pick Obsidian Workspace" },
 
+            -- Markdown Preview
+            ["<Leader>m"] = { desc = "Markdown" },
+            ["<Leader>mp"] = { "<cmd>MarkdownPreview<cr>", desc = "Preview" },
+            ["<Leader>ms"] = { "<cmd>MarkdownPreviewStop<cr>", desc = "stop" },
+            ["<Leader>mt"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle" },
+
             -- second key is the lefthand side of the map
             -- mappings seen under group name "Buffer"
             ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },

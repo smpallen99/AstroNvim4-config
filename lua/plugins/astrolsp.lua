@@ -26,6 +26,7 @@ return {
           "elixir",
           "javascript",
           "vue",
+          "markdown",
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
@@ -45,6 +46,7 @@ return {
     servers = {
       "elixirls",
       "volar",
+      -- "marksman",
       -- "pyright"
     },
     -- customize language server configuration options passed to `lspconfig`

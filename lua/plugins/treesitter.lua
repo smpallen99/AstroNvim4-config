@@ -13,6 +13,7 @@ return {
       "elixir",
       "javascript",
       "vue",
+      -- "markdown",
       -- add more arguments for adding more treesitter parsers
     })
   end,
