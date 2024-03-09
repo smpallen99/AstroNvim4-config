@@ -1,11 +1,11 @@
 -- initialize internally use mapping section titles
 --
+
 return {
   {
     "AstroNvim/astrocore",
     opts = function(_, opts)
-      return vim.tbl_deep_extend("force", opts, {
-        mappings = {
+       local mappings =  {
           n = {
             -- Steve's mappings
             ["<Leader>r"] = { "<cmd>b#<cr>", desc = "Previous buffer" },
@@ -15,6 +15,7 @@ return {
 
             ["<Leader>uZ"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
 
+            --"CodeAssistant"
             -- Obsidian
             ["<Leader>N"] = { desc = "󰺿 Notes" },
             ["<Leader>Nl"] = { "<cmd>ls<cr>", desc = "ls" },
@@ -44,6 +45,7 @@ return {
             ["<Leader>b"] = { name = "Buffers" },
             -- quick save
             ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
           },
           t = {
             -- setting a mapping to false will disable it
@@ -56,8 +58,12 @@ return {
 
             ["<C-g>"] = { function() end, desc = "GpChat" },
           },
-        },
+      }
+
+      return vim.tbl_deep_extend("force", opts, {
+        mappings = vim.tbl_deep_extend("force", require("plugins.configs.gp_mappings"), mappings),
       })
     end
   }
 }
+

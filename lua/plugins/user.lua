@@ -1,5 +1,5 @@
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
+-- local transparent = require("configuration").enable_transparent
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -87,7 +87,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = true,
+      transparent = require("configuration").enable_transparent,
       style = "moon",
       styles = {
         sidebars = "transparent",
