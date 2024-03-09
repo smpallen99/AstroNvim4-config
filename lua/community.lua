@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.recipes.telescope-nvchad-theme" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.editing-support/rainbow-delimiters-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { -- further customize the options set by the community
     "zbirenbaum/copilot.lua",
