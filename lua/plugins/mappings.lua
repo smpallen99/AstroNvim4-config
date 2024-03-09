@@ -12,6 +12,8 @@ return {
           ["<S-TAB>"] = { "<cmd>bprevious<cr>", desc = "Prev buffer" },
           ["<leader>a"] = { "<cmd>A<cr>", desc = "Alternate File" },
 
+          ["<leader>uZ"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+
           -- second key is the lefthand side of the map
           -- mappings seen under group name "Buffer"
           ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
